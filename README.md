@@ -7,3 +7,7 @@ This project is a POC, how to require files/assets/images in Elm and use webpack
 ```elm
 img [ src "require:src/assets/logo.svg" ] []
 ```
+
+## POC
+
+The folder [`./project`](./project) contains an ejected `create-elm-app` elm application with changes in its webpack configuration.
