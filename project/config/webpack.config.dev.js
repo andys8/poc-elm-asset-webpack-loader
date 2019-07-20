@@ -83,7 +83,7 @@ module.exports = {
     extensions: ['.js', '.elm']
   },
   module: {
-    // Note: We want require
+    // Note: We want to use `require`
     // noParse: /\.elm$/,
     strictExportPresence: true,
     rules: [

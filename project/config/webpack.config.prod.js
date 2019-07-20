@@ -125,7 +125,8 @@ module.exports = {
   module: {
     strictExportPresence: true,
 
-    noParse: /\.elm$/,
+    // Note: We want to use `require`
+    // noParse: /\.elm$/,
 
     rules: [
       {
@@ -202,6 +203,9 @@ module.exports = {
               replace: publicUrl,
               flags: 'g'
             }
+          },
+          {
+            loader: require.resolve('../tools/elm-asset-loader.js')
           },
           {
             // Use the local installation of elm make
