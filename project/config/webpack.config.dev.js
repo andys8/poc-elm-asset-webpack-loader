@@ -83,7 +83,8 @@ module.exports = {
     extensions: ['.js', '.elm']
   },
   module: {
-    noParse: /\.elm$/,
+    // Note: We want require
+    // noParse: /\.elm$/,
     strictExportPresence: true,
     rules: [
       // Disable require.ensure as it's not a standard language feature.
@@ -167,6 +168,9 @@ module.exports = {
               replace: publicUrl,
               flags: 'g'
             }
+          },
+          {
+            loader: require.resolve('../tools/elm-asset-loader.js')
           },
           {
             loader: require.resolve('elm-webpack-loader'),
