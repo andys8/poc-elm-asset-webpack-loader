@@ -11,3 +11,7 @@ img [ src "require:src/assets/logo.svg" ] []
 ## POC
 
 The folder [`./project`](./project) contains an ejected `create-elm-app` elm application with changes in its webpack configuration.
+
+## Result
+
+The [`elm-asset-webpack-loader`](https://github.com/andys8/elm-asset-webpack-loader) available as [npm package](https://www.npmjs.com/package/elm-asset-webpack-loader).
