@@ -170,7 +170,7 @@ module.exports = {
             }
           },
           {
-            loader: require.resolve('../tools/elm-asset-loader.js')
+            loader: require.resolve('elm-asset-webpack-loader')
           },
           {
             loader: require.resolve('elm-webpack-loader'),
